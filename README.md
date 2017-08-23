@@ -28,7 +28,7 @@ token = find_between(str(request.text), '<input type="hidden" name="_token" valu
 print("Token:")
 print(token)
 ```
-
+# Login
 After 2 seconds of search, we can see it find it's sending a post request to https://gab.ai/auth/login
 ```html
 <form action="https://gab.ai/auth/login" method="post" class="auth-form">
@@ -40,3 +40,25 @@ data = {'username':'api_rocks', 'password':'wordpass123', '_token':token}
 r = s.post("https://gab.ai/auth/login", headers=headers, data=data)
 print("logged in.")
 ```
+# Register
+https://gab.ai/auth/register
+It's harder but it's easy
+```js
+jQuery.ajax({
+url: "https://gab.ai/auth/register",
+type: "POST",
+data: form.serialize(),
+dataType: "JSON",
+```
+>jquery
+Works kindof the same
+So we can do: 
+```python
+email
+data = {'username':'API Test.','username':'api_rocks','email':'api_rocks@xss.rocks','password':'wordpass123', '_token':token}
+r = s.post("https://gab.ai/auth/register", headers=headers, data=data)
+print("logged in.")
+```
+# The End
+For now.
+https://gab.innocraft.cloud/ :wink:

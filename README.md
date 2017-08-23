@@ -3,10 +3,10 @@ So, i was dumping stuff with the app.
 
 Then i found out it had an api, so here's the docs
 # Get Token
-You can find this: 
+In the index.html source code, you can find this: 
 ```html
 <input type="hidden" name="_token" value="BorbPurlRF4twmIYTe4IIzrrjTEZ2cKibqtZBF3v">
-``` in the source code.
+``` 
 so we can find the value with this simple thing :thinking:
 ```python
 import request

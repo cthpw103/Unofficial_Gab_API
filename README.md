@@ -37,12 +37,11 @@ After 2 seconds of search, we can see it find it's sending a post request to htt
 So let's add this to the code :smile: 
 ```python
 data = {'username':'api_rocks', 'password':'wordpass123', '_token':token}
-r = s.post("https://gab.ai/auth/login", headers=headers, data=data)
+request = session.post("https://gab.ai/auth/login", headers=headers, data=data)
 print("logged in.")
 ```
 # Register
-https://gab.ai/auth/register
-It's harder but it's easy
+It's harder but it's still easy.
 ```js
 jQuery.ajax({
 url: "https://gab.ai/auth/register",
@@ -50,13 +49,19 @@ type: "POST",
 data: form.serialize(),
 dataType: "JSON",
 ```
+But first
+
+```css 
 >jquery
-Works kindof the same
+```
+
+Works kindof the same,
 So we can do: 
+
 ```python
 email
 data = {'username':'API Test.','username':'api_rocks','email':'api_rocks@xss.rocks','password':'wordpass123', '_token':token}
-r = s.post("https://gab.ai/auth/register", headers=headers, data=data)
+request = session.post("https://gab.ai/auth/register", headers=headers, data=data)
 print("logged in.")
 ```
 # The End

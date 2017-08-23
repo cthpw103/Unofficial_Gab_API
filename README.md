@@ -7,7 +7,7 @@ In the index.html source code, you can find this:
 ```html
 <input type="hidden" name="_token" value="BorbPurlRF4twmIYTe4IIzrrjTEZ2cKibqtZBF3v">
 ``` 
-so we can find the value with this simple thing :thinking:
+Hmm, so we can find the value with this simple python example :thinking:
 ```python
 import request
 import sys
